@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+input:focus {outline:0;}
+
+.mainContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 400px;
+  height: 600px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.messagesContainer {
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+}
+  
+.singleMess {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  padding-left: 6px;
+}
+
+.singleMess__author {
+  color: blue;
+}
+.singleMess__content {
+  margin: 4px 0px;
+}
+.singleMess__date {
+  font-size: 80%;
+}    
+  
+.sendMessForm {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey;
+}
+
+.sendMessForm__input {
+  width: 80%;
+  height: 24px;
+  border-radius: 10px;
+  padding-left: 4px;
+  border-color: #3498DB;
+}
+
+.sendMessForm__submit {
+  padding: 4px 12px;
+  float: left;
+  border-radius: 10px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  margin-left: 5%;
+}
+
+.app_smileys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.app_smileys ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  bottom: 49px;
+  right: 842px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+.app_smileys ul.is-active {
+  display: block;
+}
+
+.app_smileys li {
+  float: left;
+}
